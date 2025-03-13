@@ -1,5 +1,156 @@
-.container{
-    height: 100px;
-    width: 100px;
-    background-color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.container{
+
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------------header------------- */
+.navContainer{
+    padding: 10px;
+        background-color: #FAD961;
+        background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+        width: 100vw
+        
+}
+
+.navContainer nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navContainer nav ul li{
+    padding: 5px;
+    color: #ff0000;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.navContainer nav ul li a{
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* -----------------main---------------------- */
+
+
+
+
+section{
+    background-color: #FAACA8;
+        background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+        padding: 10px;
+        border-radius: 10px;
+
+}
+
+section ol,h2{
+    padding: 10px;
+}
+
+section h2{
+    color: rgb(0, 119, 255);
+    font-size: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+.item{
+    display: flex;
+}
+
+.leftBox{
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.rightBox img{
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+.rightBox:hover{
+    transform: scale(1.1);
+}
+
+.rightBox .overlay{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12.5rem;
+    width: 100%;
+    margin-top: 9%;
+    background-color: #ff01014d;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+.rightBox .overlay:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------footer--------------------------- */
+
+.footerBox{
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align:center;
+    width: 100vw;
+}
+
+/* Soumyo_o */
